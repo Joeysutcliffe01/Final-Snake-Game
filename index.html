@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/svg" href="img/snake-img-01.png">
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="js/app.js" defer type='module'></script>
+
+    <title>Snake Game</title>
+     
+</head>
+<body>
+
+      <div class="container">
+        <div class="back">
+          <div class="screen">
+            <span class="nokia">NOKIA</span>
+            <div class="game-board-container">
+              <div class="game-score">
+                <p class="game-score-p">00</p>
+              </div>
+              <div id="game-board"></div> 
+            </div>
+          </div>
+          <div class="buttons">
+            <div class="top-row">
+              <div class="start">
+                <div class="b1"></div>
+                <div class="b2"></div>
+              </div>
+              <div class="middle"></div>
+              <div class="end">
+                <div class="b1"></div>
+                <div class="b2"></div>
+              </div>
+            </div>
+            <div class="bottom-row">
+              <div class="column1">
+                <div class="btn b1 glow">1 &#x26AE;</div>
+                <div class="btn-left b2 glow" id="btn-left">4 ghi</div>
+                <div class="btn b3 glow">7 pqrs</div>
+                <div class="b4 glow">&#x1f7b2; +</div>
+              </div>
+              <div class="column2">
+                <div class="btn-up b1 glow" id="btn-up">2 abc</div>
+                <div class="btn-up b2 glow">5 jkl</div>
+                <div class="btn-down b3 glow" id="btn-down">8 tuv</div>
+                <div class="btn b4 glow">0 <span class="btn-span-0">&#x23d8</span></div>
+              </div>
+              <div class="column3">
+                <div class="btn b1 glow">def 3</div>
+                <div class="btn-right b2 glow" id="btn-right">mno 6</div>
+                <div class="btn b3 glow">wxyz 9</div>
+                <div class="btn b4 glow"><span class="btn-span">&#8679</span> &#35</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
