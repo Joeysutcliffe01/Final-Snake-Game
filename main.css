@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,300;0,600;1,400&family=Press+Start+2P&display=swap");
+
+/* font-family: "Archivo Black", sans-serif;
+font-family: "Poppins", sans-serif;
+font-family: "Press Start 2P", cursive; */
 
 body {
   height: 100vh;
@@ -11,7 +15,65 @@ body {
 
 :root {
   --game-body: #96b56f;
+  --gray-light: #f8f8f8;
+  --gray-dark: #b6b6b6;
   --white: #ffffff;
+  --black: #000000;
+}
+
+.info-container {
+  position: absolute;
+  text-align: center;
+  background-color: var(--gray-light);
+  border: 3px dotted var(--black);
+  border-radius: 0.5rem 0rem 0.5rem 0.5rem;
+  width: 20rem;
+
+  top: 3.7rem;
+  left: -21rem;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-container:hover,
+:active {
+  top: 3.7rem;
+  left: 0rem;
+}
+
+.info-icon {
+  position: absolute;
+  color: blue;
+  background: var(--gray-light);
+  padding: 1.9rem;
+  border-right: 3px dotted var(--black);
+  border-top: 3px dotted var(--black);
+  border-bottom: 3px dotted var(--black);
+  border-radius: 0% 50% 50% 0%;
+  top: -1.51rem;
+  right: -4.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-mobile {
+  margin-left: -3rem;
+}
+
+.info-pc-dir-img {
+  width: 5rem;
+  padding-bottom: 1rem;
+}
+
+.info-mobile-h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.info-mobile-dir {
+  font-family: "Press Start 2P", cursive;
+}
+
+.info-span {
+  font-size: 2rem;
 }
 
 .game-board-container {
@@ -38,7 +100,7 @@ body {
 .game-score-p {
   color: rgb(5, 5, 5);
   font-weight: 900;
-  z-index: 10000;
+  z-index: 1;
   width: 82%;
   color: rgb(5, 5, 5);
   border-bottom: 2.5px dashed rgb(0, 0, 0);
