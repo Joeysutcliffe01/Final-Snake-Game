@@ -2,15 +2,29 @@
 let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
 
-const btnUp = document.getElementById('btn-up') 
-const btnLeft = document.getElementById('btn-left') 
-const btnRight = document.getElementById('btn-right') 
-const btnDown = document.getElementById('btn-down')
+const btnUpOne = document.getElementById('btn-up-one') 
+const btnUpTwo = document.getElementById('btn-up-two')
 
-btnUp.addEventListener('click', goingUp)
-btnDown.addEventListener('click', goingDown)
-btnRight.addEventListener('click', goingRight)
-btnLeft.addEventListener('click', goingLeft)
+const btnLeftOne = document.getElementById('btn-left-one') 
+const btnLeftTwo = document.getElementById('btn-left-two') 
+
+const btnRightOne = document.getElementById('btn-right-one') 
+const btnRightTwo = document.getElementById('btn-right-two') 
+
+const btnDownOne = document.getElementById('btn-down-one')
+const btnDownTwo = document.getElementById('btn-down-two')
+
+btnUpOne.addEventListener('click', goingUp)
+btnUpTwo.addEventListener('click', goingUp)
+
+btnRightOne.addEventListener('click', goingRight)
+btnRightTwo.addEventListener('click', goingRight)
+
+btnLeftOne.addEventListener('click', goingLeft)
+btnLeftTwo.addEventListener('click', goingLeft)
+
+btnDownOne.addEventListener('click', goingDown)
+btnDownTwo.addEventListener('click', goingDown)
 
 //BUTTON MOVEMENTS
 //UP

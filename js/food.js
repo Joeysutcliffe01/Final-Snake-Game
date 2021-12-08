@@ -4,10 +4,16 @@ import { randomGridPosition } from '../js/grid.js'
 let food = getRandomPosition()
 const EXPANSION_RATE = 1;
 
+const scoreDisplay = document.getElementById('score')
+export let score = 0
+
 export function update(){
     if (onSnake(food)) {
         expandSnake(EXPANSION_RATE);
         food = getRandomPosition()
+
+        score++
+        scoreDisplay.textContent = score
     }
         
 }
@@ -28,4 +34,5 @@ function getRandomPosition() {
     }
 
     return newFoodPosition;
+
 }
