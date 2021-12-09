@@ -6,10 +6,22 @@ let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')
 
+// MAYBE COME BACK TO OR DELETE
+// document.querySelector('.start-screen-btn') {
+//   function myFunction() {
+//     const startBtn = document.querySelector('.start-screen-btn')
+//     startBtn.classList.add(".display-none");
+  
+//   }
+
+//   myFunction()
+  
+// }
+
 function main(currentTime) {
   if (gameOver) {
     if (confirm(`Game Over... Score ${score}. You can press ok to restart.`)) {
-      window.location = '/'
+      location.reload()
     }
     return
   }

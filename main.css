@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,300;0,600;1,400&family=Press+Start+2P&display=swap");
 
-/* font-family: "Archivo Black", sans-serif;
-font-family: "Poppins", sans-serif;
-font-family: "Press Start 2P", cursive; */
-
 body {
   height: 100vh;
   width: 100vw;
@@ -13,32 +9,66 @@ body {
   margin: 0;
 }
 
+/* MAYBE COME BACK TO OR DELETE */
+/* .display-none {
+  display: none;
+} */
+
+/* font-family: 'Archivo Black', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Press Start 2P', cursive; */
+
 :root {
   --game-body: #96b56f;
-  --gray-light: #f8f8f8;
-  --gray-dark: #b6b6b6;
   --white: #ffffff;
   --black: #000000;
+  --light-gray: #ffffff;
+  --dark-gray: #acacac;
 }
+/* 
+MAYBE COME BACK TO OR DELETE
+.start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  background-image: url(img/snake.jpg);
+  background-color: black;
+  background-position: center;
+  background-size: 100vmax;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.start-screen-btn {
+  padding: 1rem;
+  background-color: var(--game-body);
+  font-size: 1rem;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+  /* bottom: 5rem;
+  right: 30vw; */
+/* } */
 
 .info-container {
   position: absolute;
   text-align: center;
-  background-color: var(--gray-light);
-  border: 3px dotted var(--black);
+  background-color: var(--white);
+  border: 3px solid var(--black);
   border-radius: 0.5rem 0rem 0.5rem 0.5rem;
   width: 20rem;
-
+  cursor: pointer;
   top: 3.7rem;
-  left: -21rem;
+  left: -20.4rem;
   z-index: 2;
   transition: all 0.3s ease-in-out;
 }
 
-.info-container:hover,
-:active {
-  top: 3.7rem;
-  left: 0rem;
+.info-container:hover {
+  transform: translateX(20rem);
 }
 
 .info-icon {
@@ -46,13 +76,14 @@ body {
   color: blue;
   background: var(--gray-light);
   padding: 1rem;
-  border-right: 3px dotted var(--black);
-  border-top: 3px dotted var(--black);
-  border-bottom: 3px dotted var(--black);
+  background-color: var(--white);
+  border-right: 3px solid var(--black);
+  border-top: 3px solid var(--black);
+  border-bottom: 3px solid var(--black);
   border-radius: 0% 50% 50% 0%;
   top: -1.51rem;
-  right: -2.9rem;
-  display: none;
+  right: -2.8rem;
+  /* display: none; */
 }
 
 .info-mobile {
@@ -74,6 +105,8 @@ body {
 
 .info-span {
   font-size: 2rem;
+  font-weight: 900;
+  padding-right: 2rem;
 }
 
 .game-board-container {
@@ -229,6 +262,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
   width: 90%;
   height: 45%;
   top: 49%;
