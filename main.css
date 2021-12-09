@@ -47,12 +47,14 @@ body {
   position: absolute;
   color: blue;
   background: var(--gray-light);
-  padding: 1rem;
+  padding: 1.5rem;
+  width: 4rem;
+  text-align: right;
   background-color: var(--white);
   border-radius: 0% 50% 50% 0%;
-  box-shadow: 10px 3px 4px 0px rgba(0, 0, 0, 0.247);
+  box-shadow: 10px 3px 4px -7px rgba(0, 0, 0, 0.247);
   top: -1.35rem;
-  right: -2.6rem;
+  right: -3.5rem;
 }
 
 .info-mobile {
