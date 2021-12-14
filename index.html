@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="shortcut icon" type="image/svg" href="img/snake-img-01.png">
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sass/main.css">
 
     <script src="js/app.js" defer type='module'></script>
 
@@ -17,7 +19,9 @@
 <body>
 
       <div class="info-container">
-        <h1 class="info-icon">&#8505;</h1>
+        <div class="info-icon">
+          <img class="info-icon-img" src="img/gamepad.png" alt="">
+        </div>
         <ul class="info-mobile">
           <h1 class="info-mobile-h1">Phone</h1>
           <div class="info-mobile-dir"><span class="info-span">&#8673;</span> 2 or 5</div>
@@ -55,7 +59,7 @@
               </div>
             </div>
 
-            <div class="bottom-row">
+            <div class="bnt__one">
 
               <div class="column1">
                 <div class="b1 glow">1 ...</div>
@@ -77,6 +81,66 @@
                 <div class="b3 glow" id="btn-right-two">wxyz 9</div>
                 <div class="b4 glow"><span class="btn-span">&#8679</span> &#35</div>
               </div>
+
+            </div>
+
+              <!-- BTNS#2 PC-->
+              <div class="bnt__two inactive">
+
+                <div class="column1 ">
+                 <button class="lbtns lbtns__up ">
+                  <i class="fas fa-caret-up"></i>
+                 </button>
+                 
+                </div>
+  
+                <div class="column1">
+                  <button class="lbtns lbtns__down">
+                    <i class="fas fa-caret-down"></i>
+                  </button>
+                 </div>
+  
+                 <div class="column1">
+                  <button class="lbtns lbtns__left">
+                    <i class="fas fa-caret-left"></i>
+                  </button>
+                 </div>
+  
+                 <div class="column1">
+                  <button class="lbtns lbtns__right">
+                    <i class="fas fa-caret-right"></i>
+                  </button>
+                 </div>
+  
+              </div>
+
+             <!-- BTNS#2 large -->
+            <div class=".bnt__three inactive">
+
+              <div class="column1">
+               <button class="lbtns lbtns__up ">
+                <i class="fas fa-caret-up"></i>
+               </button>
+               
+              </div>
+
+              <div class="column1">
+                <button class="lbtns lbtns__down">
+                  <i class="fas fa-caret-down"></i>
+                </button>
+               </div>
+
+               <div class="column1">
+                <button class="lbtns lbtns__left">
+                  <i class="fas fa-caret-left"></i>
+                </button>
+               </div>
+
+               <div class="column1">
+                <button class="lbtns lbtns__right">
+                  <i class="fas fa-caret-right"></i>
+                </button>
+               </div>
 
             </div>
           </div>

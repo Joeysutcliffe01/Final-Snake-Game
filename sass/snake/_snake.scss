@@ -1,0 +1,136 @@
+.game-board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  //   border: 2px solid red;
+}
+
+.game-board-container::before {
+  content: "";
+  background-color: var(--game-body);
+  width: 90%;
+  height: 95%;
+  border-radius: 0.5rem;
+  top: 0;
+  position: absolute;
+  //   border: 2px solid red;
+}
+
+.game-score-p {
+  color: rgb(5, 5, 5);
+  font-weight: 900;
+  font-family: var(--archivo);
+  z-index: 1;
+  width: 82%;
+  color: rgb(5, 5, 5);
+  border-bottom: 2.5px dashed rgb(0, 0, 0);
+  position: absolute;
+  top: -0.8rem;
+  left: 1.3rem;
+}
+
+#game-board {
+  background-color: rgb(150, 181, 111);
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  bottom: 1rem;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+  border: 2.5px dashed rgb(0, 0, 0);
+}
+
+.snake {
+  background-image: repeating-linear-gradient(
+    190deg,
+    black,
+    rgb(97, 97, 97),
+    black
+  );
+  border-radius: 0.5rem;
+}
+
+.food {
+  background-color: rgb(0, 0, 0);
+  clip-path: polygon(
+    50% 0%,
+    83% 0,
+    100% 23%,
+    78% 59%,
+    53% 100%,
+    52% 100%,
+    24% 61%,
+    0 23%,
+    20% 0
+  );
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 270px;
+  height: 600px;
+  background: #000;
+  border-radius: 80px 80px 70px 70px;
+  overflow: hidden;
+  /* border: 2px solid rgb(234, 0, 255); */
+}
+
+.back {
+  position: absolute;
+  top: 0.3%;
+  left: 0.4%;
+  width: 98.7%;
+  height: 99%;
+  background-image: url(img/phone-b.jpg);
+  border-radius: 85px 85px 70px 70px;
+  box-shadow: 3px 13px 31px 0px rgba(0, 0, 0, 0.75);
+  /* border: 2px solid rgb(0, 247, 255); */
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    82deg,
+    rgba(28, 29, 33, 0.7),
+    rgba(28, 29, 33, 0.7) 20%,
+    rgba(76, 81, 87, 0.8) 50%,
+    rgba(76, 81, 87, 0.8)
+  );
+  position: absolute;
+  top: 19px;
+  left: 12px;
+  width: 88%;
+  height: 42%;
+  border: 4px solid #dce2e3;
+  border-radius: 3rem 3rem 1rem 1rem;
+  box-shadow: -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border: 2px solid rgb(226, 226, 226);
+}
+
+.screen::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: -5px;
+  width: 30%;
+  height: 3px;
+  border: 2px solid rgba(160, 160, 160, 0.247);
+}
+
+.screen span {
+  font-family: var(--archivo);
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
