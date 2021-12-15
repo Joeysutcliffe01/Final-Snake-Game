@@ -63,7 +63,6 @@ body {
   height: 45%;
   top: 49%;
   left: 14px;
-  cursor: pointer;
 }
 
 .glow:hover {
@@ -899,11 +898,11 @@ body {
   left: 0.4%;
   width: 98.7%;
   height: 99%;
-  background-image: url(img/phone-b.jpg);
+  background-image: url(../../img/phone-back.jpg);
+  background-size: contain;
   border-radius: 85px 85px 70px 70px;
   -webkit-box-shadow: 3px 13px 31px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 3px 13px 31px 0px rgba(0, 0, 0, 0.75);
-  /* border: 2px solid rgb(0, 247, 255); */
 }
 
 .screen {
