@@ -690,9 +690,9 @@ body {
 }
 
 .screen-saver {
-  width: 100%;
+  width: 92%;
   height: 100%;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   -webkit-animation: myAnim 0.3s ease 3s 1 normal forwards;
           animation: myAnim 0.3s ease 3s 1 normal forwards;
   z-index: 5;
@@ -782,7 +782,7 @@ body {
   left: 0.4%;
   width: 98.7%;
   height: 99%;
-  background-image: url(../../img/phone-color.jpg);
+  background-image: url(../../img/phone-b1.jpg);
   background-size: contain;
   border-radius: 85px 85px 70px 70px;
   -webkit-box-shadow: 3px 13px 31px 0px rgba(0, 0, 0, 0.75);
